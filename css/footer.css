@@ -1,0 +1,34 @@
+.footerbox{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    flex-direction: column;
+}
+.footer{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    margin:  auto;
+}
+
+.footer-links:hover{
+    color: #cecccc ;
+}
+.footer-end{
+    width:100% ;
+    height: 100px;
+    background-color: #242323;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.site-copyright{
+    width: 50%;
+    color: #cecccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

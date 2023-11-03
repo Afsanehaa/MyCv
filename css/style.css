@@ -1,0 +1,171 @@
+@import "./fonts.css";
+@import "./header.css";
+@import "./about.css";
+@import "./contact.css";
+@import "./portfolio.css";
+@import "./skills.css";
+@import "./footer.css";
+/* ....................................responsive */
+@media screen and (min-width:1280px) {
+ 
+}
+
+
+@media screen and (max-width:1279px) and (min-width:769px){
+
+}
+
+
+@media screen and (max-width:768px)and (min-width:481px){
+  .bio-box{
+    flex-direction: column;
+  }
+  .navbar-main{
+    display: none;
+  }
+  .navbar-sandwich-menu{
+    display: inline;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .bio-box__img{
+    width: 90%;
+    max-height: 600px;
+  }
+  .bio-box__description{
+    width: 90%;
+    margin-top: 30px;
+  }
+  .description-box{
+   height: 600px;
+  }
+}
+
+
+@media screen and (max-width:480px)and (min-width:200px) {
+  .parallax{
+    height: 950px;
+    position: relative;
+  }
+  .navbar{
+    position: fixed;
+
+  }
+  .navbar-main{
+    display: none;
+  }
+  .navbar-sandwich-menu{
+    display: inline;
+    width: 90%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+  .img-hamburger{
+    width: 40px;
+    height: 40px;
+  }
+  .main-header__title{
+    height: 100%;
+  }
+  #firstH1{
+    color: #F1F6F5;
+    font-size: 40px;
+    font-weight: 900;
+  }
+  #firstH4{
+    color:#FFC93C;
+    font-size: 15px;
+    margin-bottom:50px ;
+  } 
+  #seceondH1{
+    color:#FFC93C;
+    font-size: 40px;
+    display: inline;
+    font-weight: 900;
+  }
+  #secondH4{
+    color: #F1F6F5;
+    font-size: 15px;
+    margin-top:50px;
+  
+  } 
+  .container{
+    width: 100%;
+   }
+  .bio-box{
+    width: 70%;
+    flex-direction: column;
+  }
+  .bio-box__img{
+    width: 100%;
+    transform: translate(0px, 0px);
+    height: 450px;
+    margin-top: 40px;
+  }
+  
+  .dotimg {
+      width: 80%;
+      opacity: 40%;
+      /* -ms-transform: translate(40%, -20%); */
+      transform: translate(20%, -150%);
+      border-radius: 40px 70px 40px 40px;
+  }
+  .bio-box__description{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 60px;
+
+  }
+  .desc{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+ .about__title-p{
+  font-size: 25px;
+ }
+ .about__title-img{
+  width: 90px;
+ }
+ .skills-box{
+  width: 80%;
+  height: 70%;
+ }
+
+ .portfolio{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+ }
+ .portfolio-box{
+  width: 90%;
+  height: 20%;
+ }
+ .contact-box{
+  width: 80%;
+  height: 70%;
+ }
+ .contactinput{
+  width: 80%;
+  border-radius: 50px;
+ }
+.footer{
+  width: 100%;
+  flex-wrap: wrap;
+}
+.footer-links{
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+}
+}

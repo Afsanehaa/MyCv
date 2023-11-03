@@ -1,0 +1,90 @@
+.body{
+    box-sizing: border-box;
+  }
+  .parallax{
+    height: 1000px;
+    background-image: url(../images/۲۰۲۳۰۷۱۹_۱۷۴۲۲۱.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+   background-color:#000;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   
+  }
+  .navbar{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+  }
+  .navbar-sandwich-menu{
+    display: none;
+  }
+  .navbar-main{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__menu{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+  }
+  #menu2{
+    width: 15%;
+    
+  }
+  .navbar__menu>li{
+    display: inline;
+    margin-left: 15px;
+  }
+  a{
+    text-decoration: none;
+    color: #ffffff99;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .top-bar__link:hover ,.a1 {
+    border-bottom:2px solid #FFC93C;
+    color: #ffffffd7;
+  }
+  .main-header__title{
+    width: 100%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+     align-items: center;
+     background-color: rgba(0, 0,0, 0.6);
+    }
+    #firstH1{
+      color: #F1F6F5;
+      font-size: 80px;
+      font-weight: 900;
+    }
+    #firstH4{
+      color:#FFC93C;
+      font-size: 25px;
+      margin-bottom:50px ;
+    } 
+    #seceondH1{
+      color:#FFC93C;
+      font-size: 80px;
+      display: inline;
+      font-weight: 900;
+    }
+    #secondH4{
+      color: #F1F6F5;
+      font-size: 25px;
+      margin-top:50px;
+    
+    } 
+  

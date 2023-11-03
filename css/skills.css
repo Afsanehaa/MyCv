@@ -1,0 +1,62 @@
+.my-5{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  
+  }
+  .skills-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+  }
+  .skills-box{
+    width: 50%;
+    height: 50%;
+    margin-top: 50px;
+    background:linear-gradient(135deg,rgba(255,255,255,0.1),rgba(255,255,255,0));
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border-radius: 20px;
+    border: 0.5px solid rgba(255,255,255,0.18);
+    box-shadow: 0 8px 32px 0 rgba(0,0,0,0.37);
+  }
+  .skill{
+    width: 90%;
+    height: 50px;
+    
+  }
+  h3{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 2px;
+  }
+  .progress{
+    overflow: visible;
+    margin-bottom: 26px;
+    display: flex;
+    height: 0.8rem;
+    overflow: hidden;
+    line-height: 0;
+    font-size: .75rem;
+    background-color: #e9ecef;
+    border-radius:50px;
+  }
+  .progress-bar{
+    font-weight: 900;
+    position: relative;
+    border-radius: 4px;
+    overflow: visible;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    color: #000;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #FFC93C;
+    transition: width .6s ease;
+  }    
