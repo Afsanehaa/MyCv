@@ -9,7 +9,33 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
 </head>
+<style>
+
+  .swiper {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 300px;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  .portfolio_img{
+    width: 100%;
+    height: 300px;
+  }
+</style>
 <body>
   
     <!--....................................... landing page -->
@@ -64,14 +90,20 @@
                 <img src="./images/dots.png.webp" alt="" class="dotimg">
                </div>
                <div class="bio-box__description">
-                <!-- <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil, magni quos? Maiores modi ullam quas sequi fugiat, a necessitatibus porro error non cupiditate minus natus dolorum dignissimos sint odit ex!</p> -->
-                <div class="description-box">
+                  <span style="color: azure;">
+                    I have studied computer software in the University of Shariati Technical and Vocational College and I have completed the undergraduate course with an average of 16.05.
+                  </span>
+                  <br><br>
+                  <span style="color:azure">
+                    I have just started to learn front-end programming.
+                  </span>
+                <!-- <div class="description-box">
                   <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.492/build/spline-viewer.js"></script>
                     <spline-viewer url="https://prod.spline.design/3gRBPOyoU81204Qs/scene.splinecode"></spline-viewer>
-                </div>
-                <a href="#" class="deslink">
+                </div> -->
+                <!-- <a href="#" class="deslink">
                   <button type="button" class="desbutton">DOWNLOAD  CV</button>
-                </a>
+                </a> -->
                 
                 </div>
             </div>
@@ -136,20 +168,36 @@
       <section class="box">
         <div class="container"> 
           <div class="about__title-box">
-            <span class="about__title-p">Portfolio</span>
+            <span class="about__title-p">portfolio</span>
             <img src="./images/divider.png.webp" class="about__title-img" alt="">
           </div>
-          <div class="mainpotfoliobox">
-            <div class="portfolio">
-              <div class="portfolio-box pbox1"></div>
-              <div class="portfolio-box pbox2"></div>
-              <div class="portfolio-box pbox3"></div>
-              <div class="portfolio-box pbox4"></div>
-              <div class="portfolio-box pbox5"></div>
-           </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="https://github.com/Afsanehaa/Coursera">
+                  <img class="portfolio_img" src="./a-young-boy-in-a-blue-shirt-holding-a-book.jpg" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="#">
+                  <img class="portfolio_img" src="./people.jpg" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://github.com/Afsanehaa/weather-app">
+                  <img class="portfolio_img" src="./621d1d3292a9c1000164f100.jpg" />
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="https://github.com/Afsanehaa/Todo-list">
+                  <img class="portfolio_img" src="./technology.jpg" />
+                </a>
+              </div>
+              
+            </div>
           </div>
-          
         </div>
+
       </section>
     <!-- .......................................contact-->
 
@@ -188,5 +236,29 @@
         </p>
        </div>
      </section>
+
+
+     <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
 </body>
 </html>
