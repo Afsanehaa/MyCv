@@ -52,7 +52,7 @@
     font-size: 20px;
     font-weight: 900;
   }
-  .top-bar__link:hover ,.a1 {
+  .top-bar__link:hover {
     border-bottom:2px solid #FFC93C;
     color: #ffffffd7;
   }
@@ -77,7 +77,7 @@
     } 
     #seceondH1{
       color:#FFC93C;
-      font-size: 80px;
+      font-size: 80px;   
       display: inline;
       font-weight: 900;
     }
